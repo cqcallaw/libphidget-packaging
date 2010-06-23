@@ -1,0 +1,11 @@
+libphidget (2.1.7.20100618-0ubuntu2) lucid; urgency=low
+
+  * Changed debian/rules to .tiny
+
+ -- Caleb Callaway <enlightened.despot@gmail.com>  Sun, 20 Jun 2010 13:44:01 -0700
+
+libphidget (2.1.7.20100618-0ubuntu1) lucid; urgency=low
+
+  * Initial packaging
+
+ -- Caleb Callaway <enlightened.despot@gmail.com>  Sat, 19 Jun 2010 13:30:36 -0700

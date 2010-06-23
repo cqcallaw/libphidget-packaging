@@ -1,0 +1,111 @@
+                          Phidgets for Linux
+                     Version 2.1.7, 17 June 2010
+
+Installation
+============
+
+     ./configure; make; make install
+
+   This installs the library libphidget21.so and the header phidget21.h.
+Java support is compiled in by default, as well as support for Avahi
+zeroconf if it is available.
+
+   *Note: USB devices are by default only usable by root in Linux.
+          Install udev/hotplug scripts to use Phidgets from a normal 
+		  user account (see below).
+	
+Requirements
+============
+
+libusb 0.1
+
+   This is generally already installed. The libusb dev files may need to
+be installed - this is usually a package called libusb-dev.
+
+   Some embedded systems / older distros may need to manually set up
+the userspace USB device tree. Usually this is handled by udev and 
+exists in /dev/bus/usb. This can also be handled by mounting usbfs in 
+fstab, which shows up in /proc/bus/usb.
+
+Options
+=======
+
+   Configure options:
+   
+   To disable Java support:
+
+     ./configure --disable-jni
+   
+   To use mdnsresponder instead of avahi for zeroconf:
+   
+     ./configure --enable-zeroconf=bonjour
+	 
+   To disable zeroconf completely:
+   
+     ./configure --disable-zeroconf
+	 
+   To use built-ins for .local lookup:
+   
+     ./configure --enable-zeroconf-lookup
+
+Usage
+=====
+
+   Compile your projects with -lphidget21 and include phidget21.h in the
+source file.
+
+Hotplug / udev
+==============
+
+   On linux, by default, USB devices are not writeable by anybody but 
+root.
+
+   On modern systems (kernel > 2.6.7), this is solved with a udev 
+ruleset. This is the ideal solution.
+
+   On older systems, this can be solved with a hotplug script.
+   
+udev
+====
+
+   The udev rules file will make all phidgets world writeable (mode 666)
+as soon as they are attached. Note that some systems may already have 
+generic USB rulesets defined.  The udev rules are run in order from 
+smallest to largest number - the Phidgets rules, at number 99, should 
+be high enough so that any USB rules will be overridden.
+
+   To Install:
+
+     cp udev/99-phidgets.rules /etc/udev/rules.d
+
+Hotplug
+=======
+
+   A hotplug script has been included that will make phidgets writeable 
+when the are plugged in.
+
+   Because of this, there can sometimes be an issue accessing/opening a 
+device as soon as it is plugged in, before the hotplug script has run to
+make it accesible. In this case you will see an error 4: "A phidget 
+matching the type and or serial number could not be found."
+
+   Never rely on the hotplug scripts it you're using the phidget manager
+to open or access devices as soon as they appear as this will sometimes 
+fail.
+
+   To Install:
+   
+     cp hotplug/* /etc/hotplug/usb
+     chmod 755 /etc/hotplug/usb/phidgets
+	 
+Examples
+========
+
+   There are three examples in the examples directory. manager is just a
+simple program that will list all phidgets attached to the system, as 
+they are plugged in or removed. ifkit connects to an interface kit and 
+displays changes, while setting outputs. phidgetsbclist lists all SBCs
+on the network (requires seroconf support).
+
+   There is also a seperate download avialable with C examples for most 
+phidgets, on the phdigets.com website.
