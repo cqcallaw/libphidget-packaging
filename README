@@ -1,0 +1,5 @@
+packaging project for libphidget. See http://www.phidgets.com/drivers.php for details
+
+To build a package, use debuild. To build source package for Launchpad/Soyuz, use "debuild -S -sa"
+
+To update a package from upstream, switch to the libphidget-2.1.7.20100618 directory and run "uscan --verbose". This should create a new directory, from which you can run "debuild -S -sa"
