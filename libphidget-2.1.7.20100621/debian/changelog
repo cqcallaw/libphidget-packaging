@@ -1,6 +1,12 @@
+libphidget (2.1.7.20100621-0ubuntu2) lucid; urgency=low
+
+  * Added libusb-dev and libavahi-core-dev to libphidget-dev requirements
+
+ -- Caleb Callaway <enlightened.despot@gmail.com>  Wed, 23 Jun 2010 20:06:44 -0700
+
 libphidget (2.1.7.20100621-0ubuntu1) lucid; urgency=low
 
-  * New upstream release\
+  * New upstream release
   * Added debian watch file
 
  -- Caleb Callaway <enlightened.despot@gmail.com>  Tue, 22 Jun 2010 20:53:31 -0700

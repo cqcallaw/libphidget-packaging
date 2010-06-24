@@ -10,7 +10,7 @@ Homepage: http://www.phidgets.com/drivers.php
 Package: libphidget-dev
 Section: libdevel
 Architecture: any
-Depends: libphidget (= ${binary:Version}), ${misc:Depends}
+Depends: libphidget (= ${binary:Version}), ${misc:Depends}, libusb-dev, libavahi-core-dev
 Description: Header file for Phidget API
  Header file and documentation for libphidgets.
 
