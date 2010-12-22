@@ -1,0 +1,32 @@
+ dpkg-buildpackage -rfakeroot -d -us -uc -S -sa
+dpkg-buildpackage: set CFLAGS to default value: -g -O2
+dpkg-buildpackage: set CPPFLAGS to default value: 
+dpkg-buildpackage: set LDFLAGS to default value: -Wl,-Bsymbolic-functions
+dpkg-buildpackage: set FFLAGS to default value: -g -O2
+dpkg-buildpackage: set CXXFLAGS to default value: -g -O2
+dpkg-buildpackage: source package libphidget
+dpkg-buildpackage: source version 2.1.7.20100621-0ubuntu2
+dpkg-buildpackage: source changed by Caleb Callaway <enlightened.despot@gmail.com>
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b libphidget-2.1.7.20100621
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building libphidget using existing ./libphidget_2.1.7.20100621.orig.tar.gz
+dpkg-source: info: building libphidget in libphidget_2.1.7.20100621-0ubuntu2.debian.tar.gz
+dpkg-source: info: building libphidget in libphidget_2.1.7.20100621-0ubuntu2.dsc
+ dpkg-genchanges -S -sa >../libphidget_2.1.7.20100621-0ubuntu2_source.changes
+dpkg-genchanges: including full source code in upload
+dpkg-buildpackage: full upload (original source is included)
+Now running lintian...
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile libphidget_2.1.7.20100621-0ubuntu2.dsc Caleb Callaway <enlightened.despot@gmail.com>
+gpg: gpg-agent is not available in this session
+
+ signfile libphidget_2.1.7.20100621-0ubuntu2_source.changes Caleb Callaway <enlightened.despot@gmail.com>
+gpg: gpg-agent is not available in this session
+
+Successfully signed dsc and changes files
