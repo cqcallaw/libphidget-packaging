@@ -1,0 +1,41 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 15 Jun 2011 23:00:07 -0700
+Source: libphidget
+Binary: libphidget-dev libphidget
+Architecture: source
+Version: 2.1.8.20110615-0ubuntu1
+Distribution: natty
+Urgency: low
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Caleb Callaway <enlightened.despot@gmail.com>
+Description: 
+ libphidget - C language library for Phidgets
+ libphidget-dev - Header file for Phidget API
+Changes: 
+ libphidget (2.1.8.20110615-0ubuntu1) natty; urgency=low
+ .
+   * New upstream release
+Checksums-Sha1: 
+ bb424a871c9174af7c7c1ebf62d8c955bdc77b8f 1282 libphidget_2.1.8.20110615-0ubuntu1.dsc
+ 5061b69763211c2f5ea23aaa7a951c0fcb7c0aed 748092 libphidget_2.1.8.20110615.orig.tar.gz
+ 1c9f11d26d9c57a6b456b910f237d197eb22cae1 3633 libphidget_2.1.8.20110615-0ubuntu1.debian.tar.gz
+Checksums-Sha256: 
+ 8e1b7c2fd7dff1e66e6790598d4e66d2375cbdc825eaf19f0d509117372dd164 1282 libphidget_2.1.8.20110615-0ubuntu1.dsc
+ 89c9c9aa0d1bca52bd8a743cae7b294dc54c546de99ef4b6fa1c1669d76392c5 748092 libphidget_2.1.8.20110615.orig.tar.gz
+ e1512c16afef4b5ef4acd327e1aad6df57805bec08320fd68f9ac68abd09e36f 3633 libphidget_2.1.8.20110615-0ubuntu1.debian.tar.gz
+Files: 
+ 6882e3fb670fb999ce089aa2dfc163c9 1282 libs optional libphidget_2.1.8.20110615-0ubuntu1.dsc
+ c3881914dbcf453c75980696f34cf33c 748092 libs optional libphidget_2.1.8.20110615.orig.tar.gz
+ 94978a372cc0d1ecd4e6632ed6ff79b2 3633 libs optional libphidget_2.1.8.20110615-0ubuntu1.debian.tar.gz
+Original-Maintainer: Caleb Callaway <enlightened.despot@gmail.com>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iEYEARECAAYFAk35nKoACgkQs/7eAUjF6M6VqACaAh2j5ArykUW+9SAKYGVoG22f
+iy0AnRuYAaQAkYtH+yWS0CJrM1KpcWDc
+=Uu85
+-----END PGP SIGNATURE-----

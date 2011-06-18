@@ -1,0 +1,24 @@
+Source: libphidget
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Caleb Callaway <enlightened.despot@gmail.com>
+Build-Depends: debhelper (>= 7), autotools-dev, libusb-dev, libavahi-core-dev
+Standards-Version: 3.8.4
+Section: libs
+Homepage: http://www.phidgets.com/drivers.php 
+
+Package: libphidget-dev
+Section: libdevel
+Architecture: any
+Depends: libphidget (= ${binary:Version}), ${misc:Depends}
+Description: Header file for Phidget API
+ Header file and documentation for libphidgets.
+
+Package: libphidget
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: C language library for Phidgets
+ C language library and udev rules for interfacing with Phidget USB devices.
+ .
+ The JNI and Zeroconf extension have not been tested in this build.
