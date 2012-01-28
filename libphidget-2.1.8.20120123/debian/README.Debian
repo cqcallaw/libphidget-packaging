@@ -1,0 +1,6 @@
+For general information on the Phidgets C API, consult the README file.
+
+Package-specific notes:
+
+* The package provides read/write access to all Phidget devices for the group 'plugdev' through a rule in /etc/udev/rules.d/
+* The JNI and Zeroconf extensions have not been tested in this build.

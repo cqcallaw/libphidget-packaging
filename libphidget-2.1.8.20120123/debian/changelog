@@ -1,0 +1,35 @@
+libphidget (2.1.8.20120123-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release
+
+ -- Caleb Callaway <enlightened.despot@gmail.com>  Sat, 28 Jan 2012 10:08:01 -0800
+
+libphidget (2.1.8.20110615-0ubuntu1) natty; urgency=low
+
+  * New upstream release
+
+ -- Caleb Callaway <enlightened.despot@gmail.com>  Wed, 15 Jun 2011 23:00:07 -0700
+
+libphidget (2.1.7.20101222-0ubuntu1) maverick; urgency=low
+
+  * New upstream release
+
+ -- Caleb Callaway <enlightened.despot@gmail.com>  Mon, 10 Jan 2011 08:18:43 -0800
+
+libphidget (2.1.7.20101103-0ubuntu1) lucid; urgency=low
+
+  * New upstream release
+
+ -- Caleb Callaway <enlightened.despot@gmail.com>  Tue, 21 Dec 2010 22:47:22 -0800
+
+libphidget (2.1.7.20100618-0ubuntu2) lucid; urgency=low
+
+  * Changed debian/rules to .tiny
+
+ -- Caleb Callaway <enlightened.despot@gmail.com>  Sun, 20 Jun 2010 13:44:01 -0700
+
+libphidget (2.1.7.20100618-0ubuntu1) lucid; urgency=low
+
+  * Initial packaging
+
+ -- Caleb Callaway <enlightened.despot@gmail.com>  Sat, 19 Jun 2010 13:30:36 -0700
